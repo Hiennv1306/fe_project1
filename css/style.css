@@ -1,0 +1,126 @@
+* {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+@font-face {
+	font-family: 'MR';
+	src : url(../fonts/Montserrat-Regular);
+}
+@font-face {
+	font-family: 'MB';
+	src : url(../fonts/MyriadPro-Bold);
+}
+@font-face {
+	font-family: 'LB';
+	src : url(../fonts/Lato-Black);
+}
+body {
+	font-family: LB, Arial, Helvetica, sans-serif;
+	font-style: 14px;
+	
+}
+
+.text-left {
+	font-family: MR;
+}
+.text-left {
+	padding-top: 15px;
+}
+.icon {
+	float: left;
+	padding-top: 15px;
+}
+.icon span {
+	padding-right: 20px;
+}
+.text-right {
+	background: #ffbb28;
+}
+.text-right h4{
+	
+	display: flex;
+	justify-content: center;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+}
+.text-banner {
+	width: 45%;
+    margin-left: 300px;
+    color: #fff;
+}
+.jumbotron-heading {
+	color: #fff;
+	font-family: LB;
+}
+.box1 {
+	background: #000c1f;
+	height: 500px;
+}
+.box-left {
+	margin-right: 17px;
+	background: #ffbb28;
+	border-radius: 0 !important;
+}
+.box-right{
+	border: 2px solid #fff !important;
+	border-radius: 0 !important;
+}
+.colum1 {
+	background: #fff;
+	border-bottom: 1px solid #d0bdbd;
+	padding-top: 30px;
+}
+.text {
+	color: #fff;
+}
+.icon-phone {
+	text-align: center;
+}
+.info {
+	color: #ffbb28; 
+	border-radius: 50px 50px; 
+	border: 1px solid #e4d4d4; 
+	width: 52px; margin-left: 150px;
+
+}
+.text-info {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.text-info p {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 0;
+	color: #000;
+}
+.box2 {
+	margin-top: -110px;
+}
+
+.box3 {
+	margin-top: 80px;
+}
+.box3 h1 {
+	font-weight: bold;
+}
+.box4 {
+	margin-top:30px;
+}
+.box-color {
+	color: #000;
+}
+.box-large {
+	margin-bottom: 25px;
+}
+.box-con {
+	background: #013e99;
+}
+.img {
+    padding: 35px 20px;
+}
+.img h5 {
+	color: #fff;
+	margin-top: 10px;
+}
