@@ -80,7 +80,9 @@ body {
 }
 .info {
 	color: #ffbb28; 
-	border-radius: 50px 50px; 
+	border-radius: 50%; 
+	height: 52px;
+	line-height: 62px;
 	border: 1px solid #e4d4d4; 
 	width: 52px; margin-left: 150px;
 
@@ -116,6 +118,7 @@ body {
 }
 .box-con {
 	background: #013e99;
+	height: 90%;
 }
 .img {
     padding: 35px 20px;
@@ -123,4 +126,186 @@ body {
 .img h5 {
 	color: #fff;
 	margin-top: 10px;
+}
+.img img {
+	width: 15%;
+}
+.box5 {
+	background: #013e99;
+}
+.box5-text-left h3 {
+	margin: 18% 0;
+	color: #fff;
+}
+.box-button-right h4 {
+	margin:34% 0;
+	margin-left: 22%;
+	
+	
+	background: #ffbb28;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+}
+.box-button-right h4 a  {
+	color: #fff;
+	font-size: 14px;
+
+}
+.box3-list a {
+	text-transform: uppercase;
+	color: #000;
+}
+.box3-list a:hover {
+	color: #ffbb28;
+}
+.item  {
+	background: #174ea1;
+	margin-left: 10px;
+	height: 440px;
+}
+.item h6 {
+	padding-top: 45%;
+	color: #ffbb28;
+
+}
+.item p {
+	color: #ffbb28;
+}
+.slide {
+	margin-top: 30px;
+}
+.search {
+	border-radius: 50%;
+	height: 39px;
+	background: #fff;
+	margin-right: 10px;
+}
+.item a:hover {
+	background: #ffbb28;
+
+}
+.item i {
+	color: #000;
+}
+.box6 {
+	background: #2e2e2e;
+	margin-top: 140px;
+}
+.info img {
+	margin-bottom: 13px;
+    margin-left: 12px;
+
+}
+.box6-img {
+	margin-top: 40px;
+	background: #013e99;
+	border:none;
+	margin-left: 105px;
+}
+.box6-text h2 {
+	color: #ffb619;
+    text-align: center;
+}
+.box6-text h6 {
+	color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.box7 {
+	background: #013e99;
+}
+.box7 h1 {
+	text-align: center;
+	margin: 10% 0;
+	font-size: 32px;
+	color: #fff;
+	padding:12%;
+}
+.box8-info h2 {
+	padding-left: 15px;
+	font-weight: bold;
+}
+.box8-info p {
+	padding-left: 15px;
+	
+}
+.box9 {
+	background: #f2f2f2;
+}
+.box9 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15% 0;
+}
+.box10 {
+	background: #013e99;
+}
+.box10 h3 {
+	color: #fff;
+	margin-bottom: 15px;
+}
+.box10-icon{
+	float: left;
+	border-radius: 50% 50%;
+    height: 40px;
+    width: 40px;
+    background: #1b52a3;
+    line-height: 40px;
+    text-align: center;
+}
+.box10-icon i {
+	color: #ffbb28;
+	padding-top: 4px;
+}
+.box10-text {
+	margin-left: 50px;
+	margin-bottom: 30px;
+
+}
+.box10-text p {
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 15px;
+	padding-top: 12px;
+}
+.contacts {
+	margin-bottom: 15px;
+}
+.footer {
+	padding-top: 70px
+}
+.box10-service p {
+	color: #fff;
+	font-size: 15px;
+}
+.box10-service i {
+	color: #ffbb28;
+	padding-right: 5px;
+}
+.footer3 {
+	border:1px dashed #fff;
+}
+.footer3 h4 {
+	text-align: center;
+	color: #fff;
+	padding-top: 40px;
+}
+.footer3 strong {
+	color: #ffbb28;
+	font-size: 38px;
+
+}
+.footer3 h5 {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 40px;
+	
+}
+.footer3 p {
+	text-align: center;
+	color: #fff;
 }
