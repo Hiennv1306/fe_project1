@@ -50,7 +50,7 @@
 	  			</div>
 	  			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 	  				<div>
-	  					<nav class="navbar navbar-expand-sm bg-light menu">
+	  					<nav class="navbar navbar-expand-sm  menu">
 						  	<ul class="navbar-nav">
 							    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
 							    <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
@@ -239,48 +239,33 @@
 				</ul>
 				<div class="row slide">
 					<div class="owl-carousel owl-theme">
-					    <div class="item">
-					    	<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-				         	<p>Something short and leading </p>
-				         	<p>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-				         	</p>
-					    </div>
-					    <div class="item">
-					    	<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-				         	<p>Something short and leading </p>
-				         	<p>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-				         	</p>
-					    </div>
-					    <div class="item">
-					    	<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-				         	<p>Something short and leading </p>
-				         	<p>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-				         	</p>
-					    </div>
-					    <div class="item">
-					    	<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-				         	<p>Something short and leading </p>
-				         	<p>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-				         	</p>
-					    </div>
-					    <div class="item">
-					    	<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-				         	<p>Something short and leading </p>
-				         	<p>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-				            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-				         	</p>
+					     <div class="item">
+					    	<img src="images/paris.jpg">
+				    		<div class="slide-search">
+			    				<div class="slide1">
+			    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+					         		<p>Something short and leading </p>
+			    				</div>
+					         	<p>
+						            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+						            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+					         	</p>
+				    		</div>
 					    </div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$(".item").hover(function(){
+							$(this).find(".slide-search").css('display','block');
+							$(this).find(".slide1").slideDown(700);
+						},
+						function(){
+							$(this).find(".slide-search").css('display','none');
+						}
+						);
+					});
+				</script>
 	        </div>
 	    </section>
 	    <section class="container-fluid box6">
@@ -392,6 +377,20 @@
 							</ul>
 						</div>
 					</div>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$(".basic").hover(function(){
+								$(this).css({
+									transform : 'scale(1.1)',
+									transitionDuration : '0.8s'
+								});
+							},
+							function(){
+								$(this).css('transform', 'scale(1.0)');
+							}
+							);
+						});
+					</script>
 				</div>
 	    	</div>
 	    </section>
@@ -559,7 +558,7 @@
 	    	$('.owl-carousel').owlCarousel({
 	    		items: 3,
 			    loop:true,
-
+			    // autoplay: true,
 			    margin:10,
 			    dots: true,
 			   
