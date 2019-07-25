@@ -174,7 +174,6 @@ body {
 	margin-top:30px;
 }
 .box4-hover {
-	display: none;
 	background: #000;
 	border:1px solid #fff;
 	padding: 10px 8px;
@@ -183,13 +182,15 @@ body {
 	top: 0;
 	left: 0;
 	right:0;
-	
+	bottom: 0;
 	transform: scale(0);
-  	transition: .3s ease;
+  	transition: all .3s;
 }
 .box4-border {
 	padding: 25px 12px;
 	border:1px solid #ffbb28;
+	width: 100%;
+	height: 100%;
 	
 }
 .box4-border h5 {
@@ -344,6 +345,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 15% 0;
+}
+.box9 img:hover {
+	filter: contrast(100);
 }
 .box10 {
 	background: #013e99;

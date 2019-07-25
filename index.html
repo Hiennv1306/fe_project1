@@ -63,8 +63,8 @@
 	  				</div>
 	  			</div>
 	  			<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 phone-logo">
-	  				<div class="box10-icon1" style="float: left;">
-		    			<p><i class="fa fa-phone fa-2x" aria-hidden="true"></i></p>
+	  				<div class="box10-icon1  wow jackInTheBox" style="float: left;">
+		    			<p><i class="fa fa-phone fa-2x " aria-hidden="true"></i></p>
 		    		</div>
 		    		<div class="phone-text1">
 		    			<p>+1 23 567 8596</p>
@@ -276,12 +276,13 @@
 				$(document).ready(function(){
 					$(".box-con").hover(function(){
 						$(this).find(".box4-hover").css({
-							display : 'block',
 							transform: 'scale(1)',
 						});
 					},
 					function(){
-						$(this).find(".box4-hover").css('display','none');
+						$(this).find(".box4-hover").css({
+							transform : 'scale(0)',
+						});
 					}
 					);
 				});
@@ -382,11 +383,12 @@
 				<script type="text/javascript">
 					$(document).ready(function(){
 						$(".item").hover(function(){
-							$(this).find(".slide-search").css('display','block');
+							$(this).find(".slide-search").fadeIn(700);
 							$(this).find(".slide1").slideDown(700);
 						},
 						function(){
-							$(this).find(".slide-search").css('display','none');
+							$(this).find(".slide-search").fadeOut(200);
+							$(this).find(".slide1").fadeOut(200);
 						}
 						);
 					});
