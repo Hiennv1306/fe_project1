@@ -5,7 +5,7 @@
 		margin-left: 30px;
 	}
 	.box1 {
-		height: 335px;
+		height: 365px;
 	}
 	.box2 {
 		margin-top: 0;
@@ -18,27 +18,104 @@
 		margin-left: 22%;
 	}
 	.box6-img {
-		margin-left: 138px;
+		margin-left: 147px;
 	}
 	.basic {
 		margin-bottom: 30px;
+	}
+	.month {
+		width: 29%;
+	}
+	.year {
+		width: 29%;
+	}
+	.menu {
+		display: none;
+	}
+	.phone-logo {
+		display: none;
+	}
+	.mobi {
+		display: block;
+	}
+	.logo {
+		display: none;
+	}
+	.text-right h4 {
+		margin-top: 29px;
+	}
+	.navbar-brand {
+		padding-right: 52px;
+	}
+	.info {
+		margin-left: 43%;
+	}
+	.arrow {
+		padding-right: 10px;
 	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
+	.text-banner {
+		margin-left: 130px;
+	}
+	.box-button-right h4 {
+		margin-left: 82%;
+	}
+	.info {
+		margin-left: 52px;
+	}
+	.text-info p {
+		margin-left: 15px;
+	}
+	.phone-logo {
+		display: none;
+	}
+	.info {
+		margin-left: 30%;
+	}
 
 
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-
-
+	.box6-img {
+		margin-left: 42px;
+	}
+	.text-banner {
+		margin-left: 189px;
+	}
+	.box-button-right h4 {
+		margin-left: -32%;
+	}
+	.info {
+		margin-left: 30%;
+	}
+	.text-info p {
+		margin-left: 11%;
+	}
+	.phone-logo {
+		display: none;
+	}
+	.icon span {
+	    padding-right: 3px;
+	}
+	.text-right h4 {
+		height: 40px;
+		line-height: 60px;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
+	.icon span {
+	    padding-right: 13px;
+	}
+	.phone-logo {
+		display: none;
+	}
 	
 }
 

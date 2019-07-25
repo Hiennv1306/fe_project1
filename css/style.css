@@ -22,7 +22,7 @@ body {
 }
 
 .text-left {
-	font-family: MR;
+	font-family: LR;
 }
 .text-left {
 	padding-top: 15px;
@@ -57,6 +57,12 @@ body {
     color: #000;
     /* width: 140%; */
     padding-right: 20px;
+}
+.menu a:hover {
+	color: #ffbb28;
+}
+.mobi {
+	display: none;
 }
 .box10-icon1 i {
 	padding: 10px 8px;	
@@ -140,8 +146,54 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+.box-con {
+	background: #013e99;
+	height: 90%;
+	position: relative;
+	z-index: 2;
+}
+.img {
+    padding: 35px 20px;
+    position: relative;
+	z-index: 2;
+}
+.img h5 {
+	color: #fff;
+	margin-top: 10px;
+	font-family: LBL;
+	position: relative;
+	z-index: 2;
+}
+.img img {
+	width: 15%;
+}
+.box4-border img {
+	width: 20%;
+}
 .box4 {
 	margin-top:30px;
+}
+.box4-hover {
+	display: none;
+	background: #000;
+	border:1px solid #fff;
+	padding: 10px 8px;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	right:0;
+	
+	transform: scale(0);
+  	transition: .3s ease;
+}
+.box4-border {
+	padding: 25px 12px;
+	border:1px solid #ffbb28;
+	
+}
+.box4-border h5 {
+	color: #fff;
 }
 .box-color {
 	color: #000;
@@ -149,21 +201,7 @@ body {
 .box-large {
 	margin-bottom: 25px;
 }
-.box-con {
-	background: #013e99;
-	height: 90%;
-}
-.img {
-    padding: 35px 20px;
-}
-.img h5 {
-	color: #fff;
-	margin-top: 10px;
-	font-family: LBL;
-}
-.img img {
-	width: 15%;
-}
+
 .box5 {
 	background: #013e99;
 }
@@ -198,7 +236,7 @@ body {
 .item  {
 	background: #174ea1;
 	margin-left: 10px;
-	height: 440px;
+	/*height: 440px;*/
 }
 .item h6 {
 	padding-top: 45%;
@@ -237,7 +275,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: yellow;
+	background: #174ea1;
 	display: none;
 }
 .search {
@@ -266,7 +304,7 @@ body {
 	margin-top: 40px;
 	background: #013e99;
 	border:none;
-	margin-left: 105px;
+	margin-left: 37%;
 }
 .box6-text h2 {
 	color: #ffb619;
@@ -277,6 +315,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
+    font-family: LR;
 }
 .box7 {
 	background: #013e99;
@@ -336,6 +375,7 @@ body {
 	color: #fff;
 	font-size: 15px;
 	padding-top: 12px;
+	font-family: LR;
 }
 .contacts {
 	margin-bottom: 15px;
@@ -346,6 +386,7 @@ body {
 .box10-service p {
 	color: #fff;
 	font-size: 15px;
+	font-family: LR;
 }
 .box10-service i {
 	color: #ffbb28;
@@ -373,6 +414,7 @@ body {
 .footer3 p {
 	text-align: center;
 	color: #fff;
+	font-family: LR;
 }
 .month {
 	background: #ffbb28;
@@ -411,14 +453,20 @@ body {
     line-height: 38px;
     margin: 0 40px;
     border-top: 0;
-    font-family: LBL;
+    font-family: LR;
 }
 .basic h1 {
 	padding: 24px 0;
+	font-size: 25px;
 }
 .basic h1 strong {
 	color: #013e99;
+	font-size: 40px;
 
+}
+.basic button:hover {
+	background: #ffbb28;
+	border: 1px solid #ffbb28;
 }
 .button-basic {
 	padding: 15px 25px;
