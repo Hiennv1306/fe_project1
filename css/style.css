@@ -363,6 +363,7 @@ body {
 }
 .box9 {
 	background: #f2f2f2;
+	
 }
 .box9 img {
 	display: block;
@@ -577,4 +578,6 @@ input {
 .list-group li {
 	height: auto !important;
 }
-
+.form-control {
+	border-radius: 0 !important;
+}

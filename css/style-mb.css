@@ -60,6 +60,13 @@
 	.box-con:hover:after {
 		right: 31px;
 	}
+	.box9 {
+		margin-top: 72px;
+	}
+	.box-left {
+		margin-right: 0;
+	}
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -96,6 +103,9 @@
 	}
 	.icon span {
 	    padding-right: 16px;
+	}
+	.box9 {
+		margin-top: 70px;
 	}
 
 }
