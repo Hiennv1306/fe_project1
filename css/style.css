@@ -574,4 +574,7 @@ input {
 	color: #000;
 }
 
+.list-group li {
+	height: auto !important;
+}
 

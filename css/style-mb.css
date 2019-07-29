@@ -57,6 +57,9 @@
 		height: 100%;
     	width: 100%;
 	}
+	.box-con:hover:after {
+		right: 31px;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -64,12 +67,7 @@
 	.text-banner {
 		margin-left: 130px;
 	}
-	.box-button-right h4 {
-		margin-left: 82%;
-	}
-	/*.info {
-		margin-left: 52px;
-	}*/
+	
 	.text-info p {
 		margin-left: 15px;
 	}
@@ -84,7 +82,20 @@
     	width: 100%;
 	}
 	.box-con:hover:after {
-		right: 24px;
+		right: 28px;
+	}
+	.box-button-right h4 {
+		height: auto;
+		line-height: auto;
+	}
+	.month {
+		width: 20%;
+	}
+	.basic {
+		margin-bottom: 30px;
+	}
+	.icon span {
+	    padding-right: 16px;
 	}
 
 }
@@ -122,6 +133,12 @@
 	}
 	.box-con:hover:after {
 		right: 24px;
+	}
+	.month {
+		width: 20%;
+	}
+	.year {
+		width: 20%;
 	}
 }
 
