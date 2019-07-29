@@ -127,6 +127,7 @@ body {
 .text {
 	color: #fff;
 	font-family: LBL;
+	padding: 17px 48px;
 }
 .icon-phone {
 	text-align: center;
@@ -259,6 +260,7 @@ body {
 }
 .logo a {
 	text-decoration: none;
+	color: #000;
 }
 .logo-text {
 	margin-left: 60px;
