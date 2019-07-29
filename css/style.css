@@ -363,7 +363,7 @@ body {
 }
 .box9 {
 	background: #f2f2f2;
-	
+
 }
 .box9 img {
 	display: block;
@@ -423,6 +423,10 @@ body {
 .box10-service i {
 	color: #ffbb28;
 	padding-right: 5px;
+}
+.box10-service a {
+	color: #fff;
+	text-decoration: none;
 }
 .footer3 {
 	border:1px dashed #fff;
