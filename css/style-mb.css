@@ -5,7 +5,7 @@
 		margin-left: 30px;
 	}
 	.box1 {
-		height: 365px;
+		height: 100%;
 	}
 	.box2 {
 		margin-top: 0;
@@ -15,7 +15,7 @@
 	}
 	.box-button-right h4 {
 		margin: 8% 0;
-		margin-left: 22%;
+		/*margin-left: 22%;*/
 	}
 	/*.box6-img {
 		margin-left: 147px;
@@ -53,6 +53,10 @@
 	.arrow {
 		padding-right: 10px;
 	}
+	.box-con {
+		height: 100%;
+    	width: 100%;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -75,7 +79,13 @@
 	/*.info {
 		margin-left: 30%;
 	}*/
-
+	.box-con {
+		height: 100%;
+    	width: 100%;
+	}
+	.box-con:hover:after {
+		right: 24px;
+	}
 
 }
 
@@ -106,6 +116,13 @@
 		height: 40px;
 		line-height: 60px;
 	}
+	.box-con {
+		height: 100%;
+    	width: 100%;
+	}
+	.box-con:hover:after {
+		right: 24px;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -115,6 +132,13 @@
 	}
 	.phone-logo {
 		display: none;
+	}
+	.box-con {
+		height: 100%;
+    	width: 100%;
+	}
+	.box-con:hover:after {
+		right: 26px;
 	}
 	
 }

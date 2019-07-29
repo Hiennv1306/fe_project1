@@ -40,19 +40,17 @@
 	  		</div>
 	  		<div class="row" style="margin-top: 20px;">
 	  			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 logo">
-	  				<a href="" title="">
-	  					<div class="box10-icon1" style="float: left;">
-			    			<img src="images/it.png" alt="">
-			    		</div>
-			    		<div class="logo-text">
-			    			<h3>AUHandy</h3>
-			    			<p>We repair everything.</p>
-			    		</div>
-	  				</a>
+  					<div class="box10-icon1" style="float: left;">
+		    			<a href=""><img src="images/it.png" alt=""></a>
+		    		</div>
+		    		<div class="logo-text">
+		    			<h3>AUHandy</h3>
+		    			<p>We repair everything.</p>
+		    		</div>
 	  			</div>
 	  			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 	  				<nav class="navbar navbar-expand-sm  menu">
-					  	<ul class="navbar-nav">
+					  	<ul class="navbar-nav menu-top">
 						    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
 						    <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
 						    <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
@@ -244,6 +242,7 @@
 					$(".box-con").hover(function(){
 						$(this).find(".box-con-1").css({
 							background : '#000',
+							height : '100%',
 							transition : 'ease .7s',
 						});
 					},
@@ -273,82 +272,359 @@
 	        <div class="container">
 	            <h1 class="jumbotron-heading box-color">Latest Project</h1>
 	         	<p class="text-banner box-color">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet</p>
-	         	<ul class="nav justify-content-center box3-list">
-					<li class="nav-item">
-					   <a class="nav-link active" href="#">All</a>
-					</li>
-					<li class="nav-item">
-					   <a class="nav-link" href="#">Engine Repair </a>
-					</li>
-					<li class="nav-item">
-					   <a class="nav-link" href="#">Electrical</a>
-					</li>
-					<li class="nav-item">
-					   <a class="nav-link" href="#">Plumbing</a>
-					</li>
-					<li class="nav-item">
-					   <a class="nav-link" href="#">Pepair house</a>
-					</li>
-					<li class="nav-item">
-					   <a class="nav-link" href="#">Wall paint</a>
-					</li>
-				</ul>
-				<div class="row slide">
-					<div class="owl-carousel owl-theme">
-					    <div class="item">
-					    	<img src="images/paris.jpg">
-				    		<div class="slide-search">
-			    				<div class="slide1">
-			    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-					         		<p>Something short and leading </p>
-			    				</div>
-					         	<p>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-					         	</p>
-				    		</div>
-					    </div>
-					    <div class="item">
-					    	<img src="images/paris.jpg">
-				    		<div class="slide-search">
-			    				<div class="slide1">
-			    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-					         		<p>Something short and leading </p>
-			    				</div>
-					         	<p>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-					         	</p>
-				    		</div>
-					    </div>
-					    <div class="item">
-					    	<img src="images/paris.jpg">
-				    		<div class="slide-search">
-			    				<div class="slide1">
-			    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-					         		<p>Something short and leading </p>
-			    				</div>
-					         	<p>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-					         	</p>
-				    		</div>
-					    </div>
-					    <div class="item">
-					    	<img src="images/paris.jpg">
-				    		<div class="slide-search">
-			    				<div class="slide1">
-			    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
-					         		<p>Something short and leading </p>
-			    				</div>
-					         	<p>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
-						            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
-					         	</p>
-				    		</div>
-					    </div>
-					</div>
-				</div>
+		        <div class="row">
+		            <div class="col-md-12">
+		                <nav class="justify-content-center list-project">
+		                    <div class="nav nav-fill nav-tab-list" id="nav-tab" role="tablist">
+		                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-all" role="tab"  aria-selected="true">ALL</a>
+		                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-enginerepair" role="tab"  aria-selected="false">engine repair</a>
+		                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-electrical" role="tab"  aria-selected="false">electrical</a>
+		                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-plumbing" role="tab"  aria-selected="false">plumbing</a>
+		                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-pepairhouse" role="tab"  aria-selected="false">pepairhouse</a>
+		                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-wallpaint" role="tab"  aria-selected="false">wallpaint</a>
+		                    </div>
+		                </nav>
+		                <div class="tab-content" id="nav-tabContent">
+		                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" >
+		                        <div class="owl-carousel owl-theme">
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								</div>
+		                    </div>
+		                    <div class="tab-pane fade" id="nav-enginerepair" role="tabpanel" >
+		                        <div class="owl-carousel owl-theme">
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								</div>
+		                    </div>
+		                    <div class="tab-pane fade" id="nav-electrical" role="tabpanel" >
+		                        <div class="owl-carousel owl-theme">
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								</div>
+		                    </div>
+		                    <div class="tab-pane fade" id="nav-plumbing" role="tabpanel" >
+		                        <div class="owl-carousel owl-theme">
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								</div>
+		                    </div>
+		                    <div class="tab-pane fade" id="nav-pepairhouse" role="tabpanel" >
+		                        <div class="owl-carousel owl-theme">
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								</div>
+		                    </div>
+		                    <div class="tab-pane fade" id="nav-wallpaint" role="tabpanel" >
+		                        <div class="owl-carousel owl-theme">
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								    <div class="item">
+								    	<img src="images/paris.jpg">
+							    		<div class="slide-search">
+						    				<div class="slide1">
+						    					<h6 class="jumbotron-heading" >WE ARE EXPERTS HANDYMAN</h6>
+								         		<p>Something short and leading </p>
+						    				</div>
+								         	<p>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-search fa-x" aria-hidden="true"></i></a>
+									            <a href="#" class="btn my-2 search"><i class="fa fa-square-o fa-x" aria-hidden="true"></i></i></a>
+								         	</p>
+							    		</div>
+								    </div>
+								</div>
+		                    </div>
+
+		                </div>
+		            </div>
+		        </div>
 				<script type="text/javascript">
 					$(document).ready(function(){
 						$(".item").hover(function(){
@@ -576,7 +852,7 @@
 	    				<h3>Contact us</h3>
 			    		<div class="contacts">
 			    			<div class="box10-icon gom">
-				    			<p><i class="fa fa-mobile fa-2x"></i></p>
+				    			<p><i class="fa fa-mobile "></i></p>
 				    		</div>
 				    		<div class="box10-text gom">
 				    			<p>+1 23 567 8596(24/7)</p>
@@ -650,6 +926,7 @@
 	    		</div>
 	    	</div>
 	    </section>
+	    
 	    <script type="text/javascript">
 	    	$('.owl-carousel').owlCarousel({
 	    		items: 3,
@@ -674,6 +951,56 @@
 	</content>
 	<footer>
 	</footer>
+	
+    <style type="text/css" media="screen">
+    	.project-tab {
+		    padding: 10%;
+		    margin-top: -8%;
+		}
+		.project-tab #tabs{
+		    background: #007b5e;
+		    color: #eee;
+		}
+		.project-tab #tabs h6.section-title{
+		    color: #eee;
+		}
+		.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+		    color: #000;
+		    background-color: transparent;
+		    border-color: transparent transparent #f3f3f3;
+		  
+		    font-size: 16px;
+		    font-weight: bold;
+		}
+		.project-tab .nav-link {
+		    border: 1px solid transparent;
+		    border-top-left-radius: .25rem;
+		    border-top-right-radius: .25rem;
+		    color: #000;
+		    text-transform: uppercase;
+		    font-size: 16px;
+		    font-weight: 600;
+
+		}
+		.project-tab .nav-link:hover {
+		    border: none;
+		    color: yellow;
+		}
+		.project-tab thead{
+		    background: #f3f3f3;
+		    color: #333;
+		}
+		.project-tab a{
+		    text-decoration: none;
+		    color: #333;
+		    font-weight: 600;
+
+		}
+		.nav-item  {
+			text-transform: uppercase;
+			color: #000;
+		}
+    </style>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

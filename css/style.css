@@ -47,12 +47,19 @@ body {
 	
 	display: flex;
 	justify-content: center;
-	line-height: 40px;
-	font-size: 14px;
+	line-height: 47px;
+	padding-top: 5px;
+	font-size: 17px;
 	color: #fff;
 }
+.header-top {
+	height: 61px;
+}
+.menu-top {
+	width: 100%;
+}
 .menu ul li {
-	width: 90px;
+	width: 100%;
     text-align: center;
 }
 .menu ul li > a {
@@ -60,6 +67,7 @@ body {
     color: #000;
     /* width: 140%; */
     padding-right: 20px;
+    font-family: LBL;
 }
 .menu a:hover {
 	color: #ffbb28;
@@ -87,6 +95,7 @@ body {
 .jumbotron-heading {
 	color: #fff;
 	font-family: LB;
+
 }
 .box1 {
 	background: #000c1f;
@@ -94,9 +103,11 @@ body {
 }
 .box1-banner {
 	padding-top: 96px;
-}
-.box1-banner {
 	margin-bottom: 130px;
+}
+.box1-banner h2  {
+	font-size: 45px;
+	
 }
 .box-left {
 	margin-right: 17px;
@@ -123,10 +134,10 @@ body {
 .info {
 	color: #ffbb28; 
 	border-radius: 50%; 
-	height: 52px;
-	line-height: 62px;
+	height: 61px;
+	line-height: 65px;
 	border: 1px solid #e4d4d4; 
-	width: 52px;
+	width: 61px;
 	display: inline-block;
 
 }
@@ -158,19 +169,21 @@ body {
 }
 .box-con {
 	background: #013e99;
+	height: 181px;
+	width: 271px;
 }
 .box-con:hover:after  {
 	content: "";
   	position: absolute;
-  	top: 10px;
-    left: 31px;
-    right: 24px;
-    bottom: 17px;
+  	top: 11px;
+    left: 29px;
+    right: 11px;
+    bottom: 11px;
   	border: 1px solid #ffbb28;
   	transition: ease .7s;
 }
 .img {
-	padding: 10% 10%;
+	padding: 19% 10%;
 }
 
 
@@ -231,15 +244,17 @@ body {
 .item  {
 	background: #174ea1;
 	margin-left: 10px;
-	/*height: 440px;*/
+	/*height: 80%;*/
 }
 .item h6 {
 	padding-top: 45%;
 	color: #ffbb28;
+	text-align: center;
 
 }
 .item p {
 	color: #fff;
+	text-align: center;
 
 }
 .logo a {
@@ -319,9 +334,12 @@ body {
 	color: #fff;
     text-align: center;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 17px;
     font-family: LR;
 }
+.box6-text strong {
+	font-size: 45px;
+} 
 .box7 {
 	background: #013e99;
 }
@@ -349,9 +367,11 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 15% 0;
+	opacity: 0.3;
 }
 .box9 img:hover {
 	filter: contrast(100);
+	opacity: 1;
 }
 .box10 {
 	background: #013e99;
@@ -363,18 +383,19 @@ body {
 .box10-icon{
 	float: left;
 	border-radius: 50% 50%;
-    height: 40px;
-    width: 40px;
+    height: 51px;
+    width: 51px;
     background: #1b52a3;
     line-height: 40px;
     text-align: center;
 }
 .box10-icon i {
 	color: #ffbb28;
-	padding-top: 4px;
+	padding-top: 16px;
+	font-size: 20px;
 }
 .box10-text {
-	margin-left: 50px;
+	margin-left: 62px;
 	margin-bottom: 30px;
 
 }
@@ -469,7 +490,7 @@ body {
 }
 .basic h1 strong {
 	color: #013e99;
-	font-size: 40px;
+	font-size: 50px;
 
 }
 .basic button:hover {
@@ -495,6 +516,13 @@ body {
 }
 input {
 	font-family: LBL;
+}
+.list-project {
+	margin-bottom: 40px;
+}
+.nav-tab-list {
+	width: 65%;
+    margin-left: 17%;
 }
 
 
