@@ -66,6 +66,12 @@
 	.box-left {
 		margin-right: 0;
 	}
+	.mobi-ti {
+		float: right;
+		margin-top: -17%;
+
+
+	}
 
 }
 
@@ -124,17 +130,15 @@
 	/*.info {
 		margin-left: 30%;
 	}*/
-	.text-info p {
-		margin-left: 11%;
-	}
+	
 	.phone-logo {
 		display: none;
 	}
 	.icon span {
-	    padding-right: 3px;
+	    padding-right: 17px;
 	}
 	.text-right h4 {
-		height: 40px;
+		
 		line-height: 60px;
 	}
 	.box-con {
@@ -150,6 +154,10 @@
 	.year {
 		width: 20%;
 	}
+	.menu {
+		width: 100%;
+    	padding-right: 00px;
+	}
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -157,9 +165,9 @@
 	.icon span {
 	    padding-right: 13px;
 	}
-	.phone-logo {
+	/*.phone-logo {
 		display: none;
-	}
+	}*/
 	.box-con {
 		height: 100%;
     	width: 100%;
@@ -167,6 +175,9 @@
 	.box-con:hover:after {
 		right: 26px;
 	}
+	/*.box10-icon1 {
+		display: none;
+	}*/
 	
 }
 
