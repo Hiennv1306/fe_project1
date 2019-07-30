@@ -42,7 +42,7 @@
 		display: none;
 	}
 	.text-right h4 {
-		margin-top: 29px;
+		margin-top: 1%;
 	}
 	.navbar-brand {
 		padding-right: 10%;
@@ -69,8 +69,6 @@
 	.mobi-ti {
 		float: right;
 		margin-top: -17%;
-
-
 	}
 
 }
@@ -113,6 +111,23 @@
 	.box9 {
 		margin-top: 70px;
 	}
+	.menu {
+		display: none;
+	}
+	.phone-logo {
+		display: none;
+	}
+	.mobi {
+		display: block;
+	}
+	.logo {
+		display: none;
+	}
+	.mobi-ti {
+		float: right;
+		margin-top: -7%;
+	}
+
 
 }
 
