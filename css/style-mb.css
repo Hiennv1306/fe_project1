@@ -68,7 +68,16 @@
 	}
 	.mobi-ti {
 		float: right;
-		margin-top: -17%;
+		margin-top: -12%;
+	}
+	.text-left {
+		display: none;
+	}
+	.icon-right {
+		display: none;
+	}
+	.header-top {
+		margin-top: 90px;
 	}
 
 }
@@ -127,6 +136,9 @@
 		float: right;
 		margin-top: -7%;
 	}
+	.header-top {
+		margin-top: 90px;
+	}
 
 
 }
@@ -173,6 +185,12 @@
 		width: 100%;
     	padding-right: 00px;
 	}
+	 .colum1 {
+        height: 258px;
+    }
+    .text-info p {
+        font-size: 16px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -180,6 +198,9 @@
 	.icon span {
 	    padding-right: 13px;
 	}
+	.text-info p {
+        font-size: 16px;
+    }
 	/*.phone-logo {
 		display: none;
 	}*/

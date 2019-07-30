@@ -43,18 +43,15 @@ body {
 .text-right {
 	background: #ffbb28;
 }
-.text-right h4{
-	
-	display: flex;
-	justify-content: center;
-	line-height: 47px;
-	padding-top: 5px;
-	font-size: 17px;
-	color: #fff;
+.hien h4{
+    font-size: 15px;
+    background: #ffbb28;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 0;
+    color: #fff;
 }
-.header-top {
-	height: 61px;
-}
+
 .menu-top {
 	width: 100%;
 }
@@ -195,8 +192,8 @@ body {
 	
 }
 .img img {
-	width: 15%;
-	height: 35px;
+	/*width: 15%;*/
+	height: 40%;
 }
 .box4-border img {
 	width: 20%;
@@ -584,4 +581,7 @@ input {
 }
 .form-control {
 	border-radius: 0 !important;
+}
+.img1 {
+	max-height: 50px;
 }
