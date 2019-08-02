@@ -1,219 +1,152 @@
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-	.text-banner {
-		width: 86%;
-		margin-left: 30px;
+	.contact {
+		padding-left: 0;
 	}
-	.box1 {
-		height: 100%;
+	.new {
+		right: 75%;
 	}
-	.box2 {
-		margin-top: 0;
+	.sale {
+		right: 75%;
 	}
-	.box5-text-left h3 {
-		text-align: center;
+	.products img {
+		height: 100px;
 	}
-	.box-button-right h4 {
-		margin: 8% 0;
-		/*margin-left: 22%;*/
+	.text-price button {
+		padding: 3px 55px;
 	}
-	/*.box6-img {
-		margin-left: 147px;
-	}*/
-	.basic {
-		margin-bottom: 30px;
+	.menu button {
+		padding: 10% 23%;
 	}
-	.month {
-		width: 29%;
-	}
-	.year {
-		width: 29%;
-	}
-	.menu {
+	.search-sibar {
 		display: none;
 	}
-	.phone-logo {
-		display: none;
+	.news input[name = 'lastname'] {
+		margin-left: 6px;
 	}
-	.mobi {
+	.icon-menu {
 		display: block;
 	}
-	.logo {
-		display: none;
-	}
-	.text-right h4 {
-		margin-top: 1%;
-	}
-	.navbar-brand {
-		padding-right: 10%;
-	}
-	/*.info {
-		margin-left: 43%;
-	}*/
-	.arrow {
-		padding-right: 10px;
-	}
-	.box-con {
-		height: 100%;
-    	width: 100%;
-	}
-	.box-con:hover:after {
-		right: 31px;
-	}
-	.box9 {
-		margin-top: 72px;
-	}
-	.box-left {
-		margin-right: 0;
-	}
-	.mobi-ti {
-		float: right;
-		margin-top: -12%;
-	}
-	.text-left {
-		display: none;
-	}
-	.icon-right {
-		display: none;
-	}
-	.header-top {
-		margin-top: 90px;
-	}
+	
+	
+	
 
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-	.text-banner {
-		margin-left: 130px;
+	.contact {
+		padding-left: 0;
 	}
+	.images img {
 	
-	.text-info p {
-		margin-left: 15px;
+		height: 150px;
 	}
-	.phone-logo {
-		display: none;
+	.sale {
+		right: 49%;
 	}
-	/*.info {
-		margin-left: 30%;
-	}*/
-	.box-con {
-		height: 100%;
-    	width: 100%;
+	.new {
+		right: 49%;
 	}
-	.box-con:hover:after {
-		right: 28px;
+	.add-cart {
+		top: 34%;
+    	right: 23%;
 	}
-	.box-button-right h4 {
+	.add-cart button {
+		padding: 5px 9px;
+	}
+	.products img {
 		height: auto;
-		line-height: auto;
 	}
-	.month {
-		width: 20%;
+	.email-enter {
+		text-align: center;
 	}
-	.basic {
-		margin-bottom: 30px;
+	.text-price button {
+		border: 1px solid #fff;
+		padding: 9px 47px;
 	}
-	.icon span {
-	    padding-right: 16px;
+	.images {
+		padding: 0;
 	}
-	.box9 {
-		margin-top: 70px;
+	.menu button {
+		padding: 0 ;
 	}
-	.menu {
+	.search-sibar {
 		display: none;
 	}
-	.phone-logo {
-		display: none;
+	.products {
+		margin-left: 20px;
 	}
-	.mobi {
-		display: block;
-	}
-	.logo {
-		display: none;
-	}
-	.mobi-ti {
-		float: right;
-		margin-top: -7%;
-	}
-	.header-top {
-		margin-top: 90px;
-	}
-
 
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-	/*.box6-img {
-		margin-left: 42px;
-	}*/
-	.text-banner {
-		margin-left: 189px;
+	.header ul li {
+		padding: 0px 2px;
 	}
-	.box-button-right h4 {
-		margin-left: -32%;
+	.menu button {
+		padding: 10px 10px; 
 	}
-	/*.info {
-		margin-left: 30%;
-	}*/
-	
-	.phone-logo {
-		display: none;
+	.images img {
+		height: 135px;
 	}
-	.icon span {
-	    padding-right: 17px;
+	.add-cart {
+		top: 29%;
+		right: 22%;
 	}
-	.text-right h4 {
-		
-		line-height: 60px;
+	.add-cart button {
+		padding: 5px 6px;
 	}
-	.box-con {
-		height: 100%;
-    	width: 100%;
+	.images {
+		padding: 2px;
 	}
-	.box-con:hover:after {
-		right: 24px;
+	.sale {
+		top: 5%;
+		right: 49%;
 	}
-	.month {
-		width: 20%;
+	.new {
+		top: 5%;
+		right: 49%;
 	}
-	.year {
-		width: 20%;
+	.category {
+		margin-top: 0;
 	}
-	.menu {
-		width: 100%;
-    	padding-right: 00px;
+	.tags {
+		margin-bottom: 35px;
 	}
-	 .colum1 {
-        height: 100%;
-    }
-    .text-info p {
-        font-size: 16px;
-    }
+	.pages {
+		/* padding-left: 22px; */
+		margin-bottom: 35px;
+	}
+	.text-price {
+		flex-direction: column;
+	}
+	.text-price h6 {
+		text-align: center;
+	}
+
+
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	.icon span {
-	    padding-right: 13px;
+	.menu button {
+		padding: 18px 40px;
 	}
-	.text-info p {
-        font-size: 16px;
-    }
-	/*.phone-logo {
-		display: none;
-	}*/
-	.box-con {
-		height: 100%;
-    	width: 100%;
+	.images img {
+		height: 250px;
 	}
-	.box-con:hover:after {
-		right: 26px;
+	.add-cart {
+		right: 29%;
 	}
-	/*.box10-icon1 {
-		display: none;
-	}*/
+	.sale {
+		right: 57%;
+	}
+	.new {
+		right: 57%;
+	}
+
 	
 }
 

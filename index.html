@@ -23,11 +23,18 @@
 <body>
 	<header>
 		<div class="container-fluid">
+			<div class="icon-menu">
+				<i class="fa fa-toggle-off fa-2x" aria-hidden="true"></i>
+				<div class="click-on">
+					<i class="fa fa-toggle-on fa-2x" aria-hidden="true"></i>
+				</div>
+			</div>
+			
 			<div class="row header">
-				<div class="col-6 col-md-2 col-sm-2 offset-md-1  col-lg-2 col-xl-2 logo">
+				<div class="col-6 col-sm-2 col-md-2   offset-md-0  offset-lg-1  col-lg-2 col-xl-2 logo">
 					<img src="images/logo.png" alt="">
 				</div>
-				<div class="col-6 col-md-6 offset-md-2 col-sm-6  col-lg-6 col-xl-6 menu ">
+				<div class="col-6 col-sm-8 col-md-10 offset-md-0  offset-sm-0 col-lg-6  offset-lg-1 col-xl-6 menu ">
 					<nav class="navbar navbar-expand-md navbar-dark">
 						<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 							<ul class="navbar-nav">
@@ -62,12 +69,15 @@
 								
 								<a class="btn btn-outline-success my-2 my-sm-0" type="submit" href="">Search</a>
 							</form> -->
-							<button type="button" class="btn btn-warning">Buy Tickets</button>
+							
 						</div>
+						<button type="button" class="btn btn-warning">Buy Tickets</button>
 					</nav>
+					
 				</div>
 			</div>
 		</div>
+		
 	</header>
 	<content>
 	   <div class="container">
@@ -78,7 +88,7 @@
 	   </div>
 	   <section class="container">
 		   <div class="row">
-				<div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+				<div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
 					<div class="pagination">
 						<h4>Showing 1–12 of 36 results </h4>
 						<select>
@@ -360,8 +370,15 @@
 
 						
 					</div>
+					<div class="pagination-news">
+						<p><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></p>
+						<p>1</p>
+						<p>2</p>
+						<p>3</p>
+						<p><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></p>
+					</div>
 				</div>
-				<div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
 					<div class="search-sibar">
 						<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
 							<input type="text" placeholder="Search.." name="search2">
@@ -442,7 +459,7 @@
 						<div class="category news">
 							<h3>Newsletter Sign Up</h3>
 							<p>Subscribe to our newsletter to get the latest news.</p>
-							<div>
+							<div class="email-enter">
 								<form action="/action_page.php">
 								<input type="text" name="lastname" placeholder="Enter email address" value="">
 								<br><br>
@@ -458,18 +475,61 @@
 							from: 200,
 							to: 500,
 							skin: "round",
-							onChange: function (data) {
-								console.dir(data);
-							}
+							
 						});
 					</script>
 				</div>
 			</div>
-				
-		   
 	   </section>
 	</content>
 	<footer>
+		<div class="container">
+			<div class="row footer1">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer1-1">
+					<h3>About GDConf</h3>
+					<p>Duis ac turpis. 
+					Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+					Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel.
+					</p>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer1-1">
+					<div class="contact">
+						<h3>Useful Links</h3>
+						<p><a href="http://">About</a></p>
+						<p><a href="http://">Schedule</a></p>
+						<p><a href="http://">Tickets</a></p>
+						<p><a href="http://">News</a></p>
+						<p><a href="http://">Contact Us</a></p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer1-1">
+					<h3>Latest News</h3>
+					<div class="calender">
+						<p><i class="fa fa-calendar" aria-hidden="true"></i>December 23, 2019</p>
+						<h6>Aenean Auctor Wisi Et Urna </h6>
+					</div>
+					<div class="calender">
+						<p><i class="fa fa-calendar" aria-hidden="true"></i>December 23, 2019</p>
+						<h6>Aenean Auctor Wisi Et Urna </h6>
+					</div>
+					<div class="calender">
+						<p><i class="fa fa-calendar" aria-hidden="true"></i>December 23, 2019</p>
+						<h6>Aenean Auctor Wisi Et Urna </h6>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 footer1-1">
+					<h3>Instagram</h3>
+					<div class="instagram">
+						<img src="images/ist1.jpg" alt="">
+						<img src="images/ist2.jpg" alt="">
+						<img src="images/ist3.jpg" alt="">
+						<img src="images/ist4.jpg" alt="">
+						<img src="images/ist5.jpg" alt="">
+						<img src="images/ist6.jpg" alt="">
+					</div>
+				</div>		
+			</div>
+		</div>
 	</footer>
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v4.0&appId=339761309997013&autoLogAppEvents=1"></script>
