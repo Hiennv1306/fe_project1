@@ -66,14 +66,12 @@
 								</li>
 							</ul>
 							<!-- <form class="form-inline my-2 my-lg-0">
-								
 								<a class="btn btn-outline-success my-2 my-sm-0" type="submit" href="">Search</a>
 							</form> -->
 							
 						</div>
 						<button type="button" class="btn btn-warning">Buy Tickets</button>
 					</nav>
-					
 				</div>
 			</div>
 		</div>
@@ -402,7 +400,7 @@
 							/>
 						</div>
 						<div class="text-price">
-							<h6>Price: $1,000 - $99,000</h6>
+							<h6>Price: $<span class="text-from"></span> - $<span class="text-to"></span></h6>
 							<button>Filter</button>
 						</div>
 					</div>
@@ -475,7 +473,14 @@
 							from: 200,
 							to: 500,
 							skin: "round",
-							
+							onStart: function(data) {
+								$(".text-from").html(data.from);
+								$(".text-to").html(data.to);
+							},
+							onChange: function(data) {
+								$(".text-from").html(data.from);
+								$(".text-to").html(data.to);
+							}
 						});
 					</script>
 				</div>
