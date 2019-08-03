@@ -40,21 +40,51 @@
 							<ul class="navbar-nav">
 								<li class="nav-item active">
 									<a class="nav-link" href="#">Home</a>
+									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									</div>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Pages</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									</div>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Speakrs</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link"href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speakrs</a>
+									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									</div>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Schedule</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Schedule</a>
+									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									</div>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Features</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									</div>
 								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Blog</a>
+								<li class="nav-item dropdown">
+									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link " href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
@@ -69,13 +99,23 @@
 								<a class="btn btn-outline-success my-2 my-sm-0" type="submit" href="">Search</a>
 							</form> -->
 							
+							
 						</div>
 						<button type="button" class="btn btn-warning">Buy Tickets</button>
 					</nav>
 				</div>
 			</div>
 		</div>
-		
+		<style type="text/css">
+			.show a {
+				color: #fff !important;
+				border-bottom: 1px solid #fff;
+			}
+			.show a:hover {
+				color: #fff !important;
+				background-color: #000;
+			}
+		</style>
 	</header>
 	<content>
 	   <div class="container">
@@ -100,7 +140,7 @@
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -110,8 +150,49 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
+								</div>
+								<div class="add-cart">
+									<button>
+										Add to Card
+									</button>
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript">
+							$(document).ready(function(){
+								$(".box1-con").hover(function(){
+									$(this).find(".add-cart").css({
+										display : 'block',
+										transition: 'all 0.3s ease'
+									});
+								},
+								function(){
+									$(this).find(".add-cart").css({
+										display : 'none',
+										transition: 'ease'
+									});
+								}
+								);
+							});
+						</script>
+			
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
+							<div class="box1-con">
+								<div class="images">
+									<a href=""><img src="images/house.jpg" alt=""></a>
+								</div>
+								<div class="text-img">
+									<p>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 								<div class="add-cart">
 									<button>
@@ -123,7 +204,7 @@
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -133,106 +214,12 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 								<div class="add-cart">
 									<button>
 										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<img src="images/house.jpg" alt="">
-								</div>
-								<div class="text-img">
-									<p>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<img src="images/house.jpg" alt="">
-								</div>
-								<div class="text-img">
-									<p>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
-								</div>
-								<div class="sale">
-									<button>
-										SALE
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<img src="images/house.jpg" alt="">
-								</div>
-								<div class="text-img">
-									<p>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
-								</div>
-								<div class="sale">
-									<button>
-										SALE
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<img src="images/house.jpg" alt="">
-								</div>
-								<div class="text-img">
-									<p>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
-								</div>
-								<div class="sale">
-									<button>
-										SALE
 									</button>
 								</div>
 							</div>
@@ -256,6 +243,78 @@
 									<h4>fancy mug</h4>
 									<p class="money">$ 5.00</p>
 								</div>
+								<div class="sale">
+									<button>
+										SALE
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
+							<div class="box1-con">
+								<div class="images">
+									<a href=""><img src="images/house.jpg" alt=""></a>
+								</div>
+								<div class="text-img">
+									<p>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
+								</div>
+								<div class="sale">
+									<button>
+										SALE
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
+							<div class="box1-con">
+								<div class="images">
+									<a href=""><img src="images/house.jpg" alt=""></a>
+								</div>
+								<div class="text-img">
+									<p>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
+								</div>
+								<div class="sale">
+									<button>
+										SALE
+									</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
+							<div class="box1-con">
+								<div class="images">
+									<a href=""><img src="images/house.jpg" alt=""></a>
+								</div>
+								<div class="text-img">
+									<p>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+									</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
+								</div>
 								<div class="new">
 									<button>
 										NEW
@@ -266,7 +325,7 @@
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -276,8 +335,8 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 								<div class="new">
 									<button>
@@ -289,7 +348,7 @@
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -299,8 +358,8 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 								<div class="new">
 									<button>
@@ -314,7 +373,7 @@
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -324,15 +383,15 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -342,15 +401,15 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 							</div>
 						</div>
 						<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 box1">
 							<div class="box1-con">
 								<div class="images">
-									<img src="images/house.jpg" alt="">
+									<a href=""><img src="images/house.jpg" alt=""></a>
 								</div>
 								<div class="text-img">
 									<p>
@@ -360,8 +419,8 @@
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 										<i class="fa fa-star-o" aria-hidden="true"></i>
 									</p>
-									<h4>fancy mug</h4>
-									<p class="money">$ 5.00</p>
+									<h4><a href="">fancy mug</a></h4>
+									<p class="money"><a href="">$ 5.00</a></p>
 								</div>
 							</div>
 						</div>
@@ -369,11 +428,11 @@
 						
 					</div>
 					<div class="pagination-news">
-						<p><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></p>
+						<p><img src="images/left.png" alt=""></p>
 						<p>1</p>
 						<p>2</p>
 						<p>3</p>
-						<p><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></p>
+						<p><img src="images/right.png" alt=""></p>
 					</div>
 				</div>
 				<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3">
@@ -385,9 +444,9 @@
 					</div>
 					<div class="category">
 						<h3>Category</h3>
-						<p>product</p>
-						<p>News</p>
-						<p>Sport</p>
+						<p><a href="">product</a></p>
+						<p><a href="">News</a></p>
+						<p><a href="">Sport</a></p>
 					</div>
 					<div class="category">
 						<h3>Filter by Price</h3>
@@ -407,26 +466,27 @@
 					<div class="category">
 						<h3>Products</h3>
 						<div class="products">
-							<img src="images/house.jpg" alt="">
+							<a href=""><img src="images/house.jpg" alt=""></a>
 							<div class="product-text">
-								<h6>Black T-shirt</h6>
+								<h6><a href="">Black T-shirt</a></h6>
 								<p>$ 5.00</p>
 							</div>
 						</div>
 						<div class="products">
-							<img src="images/house.jpg" alt="">
+							<a href=""><img src="images/house.jpg" alt=""></a>
 							<div class="product-text">
-								<h6>Black T-shirt</h6>
+								<h6><a href="">Black T-shirt</a></h6>
 								<p>$ 5.00</p>
 							</div>
 						</div>
 						<div class="products">
-							<img src="images/house.jpg" alt="">
+							<a href=""><img src="images/house.jpg" alt=""></a>
 							<div class="product-text">
-								<h6>Black T-shirt</h6>
+								<h6><a href="">Black T-shirt</a></h6>
 								<p>$ 5.00</p>
 							</div>
 						</div>
+						
 					</div>
 					<div class="category">
 						<h3>Like Us on Facebook</h3>
