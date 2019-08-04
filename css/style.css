@@ -22,7 +22,7 @@
 body {
 	font-family: OR, sans-serif;
 	font-style: 14px;
-	
+	margin: 0 !important;
 }
 
 .header {
@@ -179,7 +179,8 @@ body {
 	position: absolute;
 	z-index: 20;
 	top: 7%;
-    right: 65%;
+	right: 65%;
+	display: none;
 }
 .new button {
 	font-family: OR;
@@ -194,7 +195,8 @@ body {
 	position: absolute;
 	z-index: 20;
 	top: 7%;
-    right: 65%;
+	right: 65%;
+	display: none;
 }
 .sale button {
 	font-family: OR;
@@ -401,11 +403,13 @@ footer {
     border-radius: 8px 8px;
 }
 .icon-menu {
+	height: 33px;
 	position: relative;
 	z-index: 77777;
 	display: none;
 }
 .click-on {
+	display: none;
 	position: absolute;
 	z-index: 888888;
 	top: 0;
@@ -429,6 +433,97 @@ footer {
 	display: none !important;
 }
 
+.images:hover:after  {
+	content: "";
+	position: absolute;
+	background: rgb(100,100,103);
+	background: linear-gradient(0deg, rgb(7, 7, 7) 11%, rgba(23,148,85,0) 87%, rgba(243,247,247,1) 100%);
+  	top: 11px;
+    left: 29px;
+	right: 29px;
+    bottom: 144px;
+    /* border: 1px solid #ffbb28; */
+  	transition: ease 1s;
+}
+.mobile {
+	width: 42%;
+	background: #b9b9b9;
+	position: fixed;
+	z-index: 34;
+	margin-left: -243px;
+	left: 0;
+	top: 33px;
+	display: none;
+}
+.menu-mb {
+	flex-direction: column;
+}
+.cancle p {
+	text-align: right;
+    padding-right: 10px;
+}
+a.on_top { opacity:0.6; display: none;}
+a.on_top:hover{
+	background-image: linear-gradient(to bottom right, #fdf7b1, yellow);
+	color: #fff;
+	border: 1px solid #9fa2a3;
+	opacity:1;
+}
+a.on_top i{ font-size: 20px;}
+a.on_top {
+	border-radius: 20px 20px;
+    background-image: linear-gradient(to bottom right, #fdf7b1, yellow);
+    padding: 10px 13px;
+    white-space: nowrap;
+    color: #fff;
+    position: fixed;
+    bottom: 75px;
+    right: 30px;
+    height: 41px;
+}
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+.rating > label:before {
+	margin: 2px;
+}
 
     
 

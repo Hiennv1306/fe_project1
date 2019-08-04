@@ -27,6 +27,9 @@
 	.icon-menu {
 		display: block;
 	}
+	.mobile {
+		display: block;
+	}
 	
 	
 	
@@ -69,13 +72,23 @@
 		padding: 0;
 	}
 	.menu button {
-		padding: 0 ;
+		padding: 10% 23%;
+		
 	}
 	.search-sibar {
 		display: none;
 	}
 	.products {
 		margin-left: 20px;
+	}
+	.menu ul {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.mobile {
+		margin-left: -290px;
 	}
 
 }
