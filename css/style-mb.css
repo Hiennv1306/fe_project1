@@ -30,7 +30,9 @@
 	.mobile {
 		display: block;
 	}
-	
+	.add-cart {
+		right: 40%;
+	}
 	
 	
 
@@ -72,7 +74,7 @@
 		padding: 0;
 	}
 	.menu button {
-		padding: 10% 23%;
+		padding: 6% 23%;
 		
 	}
 	.search-sibar {
@@ -90,6 +92,13 @@
 	.mobile {
 		margin-left: -290px;
 	}
+	.images:hover:after {
+		top: 0px;
+		left: 15px;
+		right: 15px;
+		bottom: 45%; 
+	}
+
 
 }
 
@@ -138,6 +147,13 @@
 	.text-price h6 {
 		text-align: center;
 	}
+	.images:hover:after {
+		top: 1px;
+		left: 17px;
+		right: 17px;
+		bottom: 47%;
+	}
+	
 
 
 }
@@ -158,6 +174,9 @@
 	}
 	.new {
 		right: 57%;
+	}
+	.images:hover:after {
+		bottom: 34%;
 	}
 
 	

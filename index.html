@@ -33,34 +33,55 @@
 		</div>
 		<ul class="nav justify-content-left menu-mb">
 			<li class="nav-item">
-				<a class="nav-link active" href="#">Home</a>
+				<a class="nav-link" href="#">Home</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">Pages</a>
+				<ul class="nav justify-content-left menu-mb menu-mb2">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="" >Schedule</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="" >Features</a>
+					</li>
+				</ul>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Disabled link</a>
+				<a class="nav-link" href="" >Schedule</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="" >Features</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="#">Shop</a>
+				<ul class="nav justify-content-left menu-mb menu-mb2">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Pages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="" >Schedule</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="" >Features</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="" >Blog</a>
 			</li>
 		</ul>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$(".icon-menu").click(function(){
-				$(this).find('.click-on').css('display','block');
-				$(this).find('.fa-toggle-off').css('display','none');
-				$('.mobile').css({
-					marginLeft : '0',
-					transition: 'margin-left .5s .5s'
-				})
-			});
-			$('.cancle').click(function(){
-				$('.mobile').css({
-					marginLeft : '-243px',
-					transition: 'margin-left .5s .5s'
-				})
-				$('.click-on').css('display','none');
-				$('.fa-toggle-off').css('display','block');
-
+			$("li").hover(function(){
+				$(this).find(".menu-mb2").css('display' , 'block');
+			},
+			function(){
+				$(this).find(".menu-mb2").css('display' , 'none');
 			});
 		});
 	</script>
@@ -68,7 +89,7 @@
 		<div class="container-fluid">
 			<div class="row header">
 				<div class="col-6 col-sm-5 col-md-2   offset-md-0  offset-lg-1  col-lg-2 col-xl-2 logo">
-					<img src="images/logo.png" alt="">
+					<a href=""><img src="images/logo.png" alt=""></a>
 				</div>
 				<div class="col-6 col-sm-7 col-md-10 offset-md-0  offset-sm-0 col-lg-6  offset-lg-1 col-xl-6 menu ">
 					<nav class="navbar navbar-expand-md navbar-dark">
@@ -76,58 +97,66 @@
 							<ul class="navbar-nav">
 								<li class="nav-item active">
 									<a class="nav-link" href="#">Home</a>
-									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
-									</div>
+								
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
 									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Font Page</a>
+									<a class="dropdown-item" href="#">Single Product Page</a>
+									<a class="dropdown-item" href="#"> Cart</a>
+									<a class="dropdown-item" href="#"> Checkout</a> 
+									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link"href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speakrs</a>
 									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Font Page</a>
+									<a class="dropdown-item" href="#">Single Product Page</a>
+									<a class="dropdown-item" href="#"> Cart</a>
+									<a class="dropdown-item" href="#"> Checkout</a> 
+									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Schedule</a>
 									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Font Page</a>
+									<a class="dropdown-item" href="#">Single Product Page</a>
+									<a class="dropdown-item" href="#"> Cart</a>
+									<a class="dropdown-item" href="#"> Checkout</a> 
+									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
 									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Font Page</a>
+									<a class="dropdown-item" href="#">Single Product Page</a>
+									<a class="dropdown-item" href="#"> Cart</a>
+									<a class="dropdown-item" href="#"> Checkout</a> 
+									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
 									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Font Page</a>
+									<a class="dropdown-item" href="#">Single Product Page</a>
+									<a class="dropdown-item" href="#"> Cart</a>
+									<a class="dropdown-item" href="#"> Checkout</a> 
+									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link " href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
 									<div class="dropdown-menu menu2" aria-labelledby="dropdown01">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+									<a class="dropdown-item" href="#">Font Page</a>
+									<a class="dropdown-item" href="#">Single Product Page</a>
+									<a class="dropdown-item" href="#"> Cart</a>
+									<a class="dropdown-item" href="#"> Checkout</a> 
+									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
 							</ul>
@@ -142,14 +171,43 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".icon-menu").click(function(){
+					$(this).find('.click-on').css('display','block');
+					$(this).find('.fa-toggle-off').css('display','none');
+					$('.mobile').css({
+						marginLeft : '0',
+						transition: 'margin-left .5s .5s'
+					})
+				});
+				$('.cancle').click(function(){
+					$('.mobile').css({
+						marginLeft : '-243px',
+						transition: 'margin-left .5s .5s'
+					})
+					$('.click-on').css('display','none');
+					$('.fa-toggle-off').css('display','block');
+	
+				});
+				$("li").hover(function(){
+					$(this).find(".menu2").css('display' , 'block');
+
+				},
+				function(){
+					$(this).find(".menu2").css('display' , 'none');
+				});
+			});
+		</script>
 		<style type="text/css">
-			.show a {
+			.menu2 a {
 				color: #fff !important;
-				border-bottom: 1px solid #fff;
+				padding-bottom: 15px;
 			}
-			.show a:hover {
+			.menu2 a:hover {
 				color: #fff !important;
-				background-color: #000;
+				background-color: #363636;
+				text-decoration: underline;
 			}
 		</style>
 	</header>
@@ -565,9 +623,10 @@
 					</div>
 					<div class="category">
 						<h3>Category</h3>
-						<p><a href="">product</a></p>
+						<p><a href="">Interviews</a></p>
+						<p><a href="">Tutorials</a></p>
 						<p><a href="">News</a></p>
-						<p><a href="">Sport</a></p>
+						<p><a href="">Opinions</a></p>
 					</div>
 					<div class="category">
 						<h3>Filter by Price</h3>
