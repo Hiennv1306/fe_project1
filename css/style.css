@@ -45,7 +45,7 @@ body {
 	width: auto;
 	color: #000 !important;
 	font-size: 1em;
-	border-bottom: 2px solid #fff;
+	/* border-bottom: 2px solid #fff; */
 	padding: 30px 0;
 }
 
@@ -246,7 +246,7 @@ form.example::after {
 .search-sibar {
 	margin-top: 29px;
     /* padding: 29px 1px; */
-    border: 1px solid #f7efef;
+    border: 1px solid #ececec;
     box-shadow: -1px 13px 7px -16px rgba(0,0,0,0.75);
 
 }
@@ -305,7 +305,7 @@ form.example::after {
 	border-radius: 5px 5px;
 }
 .product-text {
-	padding-right: 35px;
+	/* padding-right: 35px; */
     /* margin-left: 10px; */
     padding-left: 21px;
 }
@@ -354,7 +354,7 @@ form.example::after {
 .news input[name = 'lastname'] {
 	width: 100%;
 	height: 43px;
-	border: 1px solid #fbf5f5;
+	border: 1px solid #f9efef;
     box-shadow: -1px 13px 20px -16px rgba(0,0,0,0.75);
 
 }
@@ -440,9 +440,9 @@ footer {
 	content: "";
 	position: absolute;
 	background: rgb(100,100,103);
-	background: linear-gradient(0deg, rgb(7, 7, 7) 11%, rgba(23,148,85,0) 87%, rgba(243,247,247,1) 100%);
-  	top: 11px;
-    left: 29px;
+	background: linear-gradient(0deg, rgb(7, 7, 7) 5%, rgba(23,148,85,0) 87%, rgb(19, 19, 19) 100%);
+	top: 14px;
+    left: 30px;
 	right: 29px;
     bottom: 30%;
     /* border: 1px solid #ffbb28; */
@@ -452,6 +452,7 @@ footer {
 	width: 42%;
 	background: #b9b9b9;
 	position: fixed;
+	opacity: 0.7;
 	z-index: 34;
 	margin-left: -243px;
 	left: 0;
@@ -534,6 +535,10 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 .rating > label:before {
 	margin: 2px;
+}
+.dropdown-menu {
+   
+	 margin: 0 0 0;
 }
 
     
