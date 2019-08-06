@@ -534,13 +534,13 @@ h1 { font-size: 1.5em; margin: 10px; }
   font-size: 1em;
   font-family: FontAwesome;
   display: inline-block;
-  content: "\f005";
+  content: "\f006";
 }
 
-.rating > .half:before { 
-  content: "\f089";
+/* .rating > .half:before { 
+  content: "\f123";
   position: absolute;
-}
+} */
 
 .rating > label { 
   color: #ddd; 
