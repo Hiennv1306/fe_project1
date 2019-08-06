@@ -98,6 +98,7 @@ body {
 	padding: 30px 0;
 	border-bottom: 1px solid #ececec;
 	margin-bottom: 30px;
+	margin-right: -18px;
 }
 .pagination h4 {
 	font-size: 1em;
@@ -107,8 +108,8 @@ body {
 	width: 90%;
 	height: 40px;
 	padding: 7px 16px;
-	border: 1px solid #f7efef;
-    box-shadow: -1px 13px 6px -16px rgba(0,0,0,0.75);
+	border: 1px solid #f7f3f3;
+    box-shadow: -1px 13px 4px -16px rgba(0,0,0,0.75);
 }
 .images {
 	width: 100%;
@@ -201,7 +202,7 @@ body {
 	z-index: 20;
 	top: 7%;
 	right: 65%;
-	display: none;
+
 }
 .new button {
 	font-family: OR;
@@ -217,7 +218,7 @@ body {
 	z-index: 20;
 	top: 7%;
 	right: 65%;
-	display: none;
+	
 }
 .sale button {
 	font-family: OR;
@@ -264,8 +265,8 @@ form.example::after {
 .search-sibar {
 	margin-top: 29px;
     /* padding: 29px 1px; */
-    border: 1px solid #ececec;
-    box-shadow: -1px 13px 6px -16px rgba(0,0,0,0.75);
+    border: 1px solid #f7f3f3;
+    box-shadow: -1px 13px 4px -16px rgba(0,0,0,0.75);
 
 }
 .category {
@@ -373,7 +374,7 @@ form.example::after {
 	width: 100%;
 	height: 43px;
 	padding: 0 20px;
-	border: 1px solid #f9efef;
+	border: 1px solid #fbf1f1;
     box-shadow: -1px 13px 5px -16px rgba(0,0,0,0.75);
 
 }
@@ -455,7 +456,7 @@ footer {
 	display: none !important;
 }
 
-.images:hover:after  {
+/* .images:hover:after  {
 	content: "";
 	position: absolute;
 	background: rgb(100,100,103);
@@ -464,9 +465,9 @@ footer {
     left: 30px;
 	right: 29px;
     bottom: 26%;
-    /* border: 1px solid #ffbb28; */
+    /* border: 1px solid #ffbb28; 
   	transition: ease 1s;
-}
+} */
 .mobile {
 	width: 42%;
 	background: #b9b9b9;
