@@ -108,7 +108,8 @@ body {
 	width: 90%;
 	height: 40px;
 	padding: 7px 16px;
-	border: 1px solid #f7f3f3;
+	border: 1px solid #fdf1f1;
+	border-radius: 5px 5px;
     box-shadow: -1px 13px 4px -16px rgba(0,0,0,0.75);
 }
 .images {
@@ -146,6 +147,7 @@ body {
 .text-img h4 {
 	font-family: JS;
 	padding-top: 8px;
+	text-align: center;
 	font-size: 1.25em;
 	text-transform: capitalize;
 }
@@ -196,6 +198,10 @@ body {
 	border-color: yellow;
 	box-shadow: -1px 13px 20px -13px rgba(0,0,0,0.75);
 	
+}
+.box1-con:hover .add-cart {
+	display: block;
+	transition: width 2s;
 }
 .new {
 	position: absolute;
@@ -265,7 +271,8 @@ form.example::after {
 .search-sibar {
 	margin-top: 29px;
     /* padding: 29px 1px; */
-    border: 1px solid #f7f3f3;
+	border: 1px solid #f7eded;
+	border-radius: 5px 5px;
     box-shadow: -1px 13px 4px -16px rgba(0,0,0,0.75);
 
 }

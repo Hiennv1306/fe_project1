@@ -33,6 +33,9 @@
 	.add-cart {
 		right: 40%;
 	}
+	.select-text img {
+		margin-left: -15px;
+	}
 	
 	
 
@@ -97,6 +100,9 @@
 		left: 15px;
 		right: 15px;
 		bottom: 45%; 
+	}
+	.select-text img {
+		margin-left: -15px;
 	}
 
 
