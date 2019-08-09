@@ -103,6 +103,7 @@ body {
 .pagination h4 {
 	font-size: 1em;
 	font-family: OR;
+	padding-top: 14px;
 }
 .pagination select {
 	width: 90%;
@@ -145,6 +146,9 @@ body {
 	margin-top: 20px;
 	padding: 15px 15px;
 }
+.pagination-news a {
+	color: #000;
+}
 
 .text-img {
 	display: flex;
@@ -184,6 +188,8 @@ body {
 .box1 {
 	position: relative;
 	z-index: 10;
+	margin-bottom: 56px;
+
 
 }
 .box1 .box1-con {
