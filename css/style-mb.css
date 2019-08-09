@@ -46,10 +46,10 @@
 	.contact {
 		padding-left: 0;
 	}
-	.images img {
+	/* .images img {
 	
 		height: 150px;
-	}
+	} */
 	.sale {
 		right: 49%;
 	}
@@ -116,9 +116,9 @@
 	.menu button {
 		padding: 10px 10px; 
 	}
-	.images img {
+	/* .images img {
 		height: 135px;
-	}
+	} */
 	.add-cart {
 		top: 29%;
 		right: 22%;
@@ -169,9 +169,9 @@
 	.menu button {
 		padding: 18px 40px;
 	}
-	.images img {
+	/* .images img {
 		height: 250px;
-	}
+	} */
 	.add-cart {
 		right: 29%;
 	}
