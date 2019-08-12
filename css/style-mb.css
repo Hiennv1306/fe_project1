@@ -41,6 +41,9 @@
 	.select-text {
 		margin-right: 10px;
 	}
+	.menu ul {
+		display: none;
+	}
 	
 	
 
@@ -119,9 +122,9 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.header ul li {
+	/* .header ul li {
 		padding: 0px 2px;
-	}
+	} */
 	.menu button {
 		padding: 10px 10px; 
 	}
