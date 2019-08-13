@@ -75,6 +75,13 @@
 				<a class="nav-link" href="" >Blog</a>
 			</li>
 		</ul>
+		<div style="display: flex;justify-content: center;" class="icon-xahoi" >
+			<span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+			<span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+			<span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+			<span><i class="fa fa-google-plus" aria-hidden="true"></i></span>
+		</div>
+		
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -176,9 +183,13 @@
 									<a class="dropdown-item" href="#"> My Account</a>
 									</div>
 								</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link " href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search fa-2x"  style="font-size: 1.5em;" aria-hidden="true"></i></a>
-							</li>
+								<li class="nav-item dropdown search-header">
+									<form class="example "  style="display: flex;justify-content: center;text-align: center;padding-top: 22px;" >
+									
+										<button id="search" type="submit"><i class="fa fa-search"></i></button>
+										<input type="text" placeholder="Search.." name="search2">
+									</form>
+								</li>
 						</ul>
 						<button type="button" class="btn ">Buy Tickets</button>
 					</nav>
@@ -214,6 +225,11 @@
 				function(){
 					$(this).find(".menu2").css('display' , 'none');
 				});
+				$("#search").click(function(){
+					$(".search-header input[name = 'search2']").toggle();
+
+				});
+				
 			});
 		</script>
 		<style type="text/css">
@@ -604,272 +620,7 @@
 						</script> -->
 						
 					</div>
-					<!-- <div class="row hang">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/football.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-5" name="rating-5" value="5" /><label class = "full" for="star5-5" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-5" name="rating-5" value="4" /><label class = "full" for="star4-5" title="Pretty good - 4 stars"></label>
-										<input checked type="radio" id="star3-5" name="rating-5" value="3" /><label class = "full" for="star3-5" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-5" name="rating-5" value="2" /><label class = "full" for="star2-5" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-5" name="rating-5" value="1" /><label class = "full" for="star1-5" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="sale">
-									<button>
-										SALE
-									</button>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/football.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-5" name="rating-5" value="5" /><label class = "full" for="star5-5" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-5" name="rating-5" value="4" /><label class = "full" for="star4-5" title="Pretty good - 4 stars"></label>
-										<input checked type="radio" id="star3-5" name="rating-5" value="3" /><label class = "full" for="star3-5" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-5" name="rating-5" value="2" /><label class = "full" for="star2-5" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-5" name="rating-5" value="1" /><label class = "full" for="star1-5" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="sale">
-									<button>
-										SALE
-									</button>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/football.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-6" name="rating-6" value="5" /><label class = "full" for="star5-6" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-6" name="rating-6" value="4" /><label class = "full" for="star4-6" title="Pretty good - 4 stars"></label>
-										<input checked type="radio" id="star3-6" name="rating-6" value="3" /><label class = "full" for="star3-6" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-6" name="rating-6" value="2" /><label class = "full" for="star2-6" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-6" name="rating-6" value="1" /><label class = "full" for="star1-6" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="sale">
-									<button>
-										SALE
-									</button>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						
-					</div> -->
-					<!-- <script type="text/javascript">
-						$(document).ready(function(){
-							$(".box1-con").hover(function(){
-								$(this).find(".sale").fadeIn(700);
-							},
-							function(){
-								$(this).find(".sale").fadeOut(200);
-							}
-							);
-						});
-					</script> -->
-					<!-- <div class="row hang">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/glass.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-7" name="rating-7" value="5" /><label class = "full" for="star5-7" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-7" name="rating-7" value="4" /><label class = "full" for="star4-7" title="Pretty good - 4 stars"></label>
-										<input checked type="radio" id="star3-7" name="rating-7" value="3" /><label class = "full" for="star3-7" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-7" name="rating-7" value="2" /><label class = "full" for="star2-7" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-7" name="rating-7" value="1" /><label class = "full" for="star1-7" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="new">
-									<button>
-										NEW
-									</button>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/glass.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-8" name="rating-8" value="5" /><label class = "full" for="star5-8" title="Awesome - 5 stars"></label>
-										<input checked type="radio" id="star4-8" name="rating-8" value="4" /><label class = "full" for="star4-8" title="Pretty good - 4 stars"></label>
-										<input type="radio" id="star3-8" name="rating-8" value="3" /><label class = "full" for="star3-8" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-8" name="rating-8" value="2" /><label class = "full" for="star2-8" title="Kinda bad - 2 stars"></label>
-										<input checked type="radio" id="star1-8" name="rating-8" value="1" /><label class = "full" for="star1-8" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="new">
-									<button>
-										NEW
-									</button>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/glass.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-9" name="rating-9" value="5" /><label class = "full" for="star5-9" title="Awesome - 5 stars"></label>
-										<input checked type="radio" id="star4-9" name="rating-9" value="4" /><label class = "full" for="star4-9" title="Pretty good - 4 stars"></label>
-										<input type="radio" id="star3-9" name="rating-9" value="3" /><label class = "full" for="star3-9" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-9" name="rating-9" value="2" /><label class = "full" for="star2-9" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-9" name="rating-9" value="1" /><label class = "full" for="star1-9" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="new">
-									<button>
-										NEW
-									</button>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-					</div> -->
-					<!-- <script type="text/javascript">
-						$(document).ready(function(){
-							$(".box1-con").hover(function(){
-								$(this).find(".new").fadeIn(700);
-							},
-							function(){
-								$(this).find(".new").fadeOut(200);
-							}
-							);
-						});
-					</script> -->
-					<!-- <div class="row hang">
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/ist3.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-10" name="rating-10" value="5" /><label class = "full" for="star5-10" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-10" name="rating-10" value="4" /><label class = "full" for="star4-10" title="Pretty good - 4 stars"></label>
-										<input type="radio" id="star3-10" name="rating-10" value="3" /><label class = "full" for="star3-10" title="Meh - 3 stars"></label>
-										<input checked type="radio" id="star2-10" name="rating-10" value="2" /><label class = "full" for="star2-10" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-10" name="rating-10" value="1" /><label class = "full" for="star1-10" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/ist3.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-11" name="rating-11" value="5" /><label class = "full" for="star5-11" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-11" name="rating-11" value="4" /><label class = "full" for="star4-11" title="Pretty good - 4 stars"></label>
-										<input checked type="radio" id="star3-11" name="rating-11" value="3" /><label class = "full" for="star3-11" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-11" name="rating-11" value="2" /><label class = "full" for="star2-11" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-11" name="rating-11" value="1" /><label class = "full" for="star1-11" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 box1">
-							<div class="box1-con">
-								<div class="images">
-									<a href=""><img src="images/laptop.jpg" alt=""></a>
-								</div>
-								<div class="text-img">
-									<fieldset class="rating">
-										<input type="radio" id="star5-12" name="rating-12" value="5" /><label class = "full" for="star5-12" title="Awesome - 5 stars"></label>
-										<input type="radio" id="star4-12" name="rating-12" value="4" /><label class = "full" for="star4-12" title="Pretty good - 4 stars"></label>
-										<input checked type="radio" id="star3-12" name="rating-12" value="3" /><label class = "full" for="star3-12" title="Meh - 3 stars"></label>
-										<input type="radio" id="star2-12" name="rating-12" value="2" /><label class = "full" for="star2-12" title="Kinda bad - 2 stars"></label>
-										<input type="radio" id="star1-12" name="rating-12" value="1" /><label class = "full" for="star1-12" title="Sucks big time - 1 star"></label>
-									</fieldset>
-									<h4><a href="">fancy mug</a></h4>
-									<p class="money"><a href="">$ 5.00</a></p>
-								</div>
-								<div class="add-cart">
-									<button>
-										Add to Card
-									</button>
-								</div>
-							</div>
-						</div>
-					</div> -->
+					
 					<div class="pagination-news">
 						<p><a href=""><img src="images/left.png" alt=""></a></p>
 						<p><a href="">1</a></p>
