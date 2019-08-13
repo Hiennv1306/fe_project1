@@ -506,9 +506,6 @@ footer {
 .menu-mb {
 	flex-direction: column;
 }
-/* .menu-mb li {
-	border-bottom: 1px solid #000;
-} */
 .menu-mb2 {
 	padding-left: 30px;
 	display: none;
@@ -521,7 +518,6 @@ a.on_top { opacity:1; display: none;}
 a.on_top:hover{
 	background-image: linear-gradient(to bottom right, #fdf7b1, #fdda5d);
 	color: #fff;
-	/* border: 1px solid #9fa2a3; */
 	opacity:1;
 }
 a.on_top i{ 
@@ -544,8 +540,6 @@ fieldset, label { margin: 0; padding: 0; }
 body{ margin: 20px; }
 h1 { font-size: 1.5em; margin: 10px; }
 
-/****** Style Star Rating Widget *****/
-
 .rating { 
   border: none;
   float: left;
@@ -553,24 +547,16 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 .rating > input { display: none; } 
 .rating > label:before { 
-  /* margin: 5px; */
   font-size: 1em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f006";
 }
 
-/* .rating > .half:before { 
-  content: "\f123";
-  position: absolute;
-} */
-
 .rating > label { 
   color: #ddd; 
  float: right; 
 }
-
-/***** CSS Magic to Highlight Stars on Hover *****/
 
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
@@ -580,12 +566,9 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > input:checked ~ label,
 .rating > label~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: rgb(238, 217, 96);  } 
-/* .rating > label:before {
-	margin: 2px;
-} */
+
 .dropdown-menu {
-   
-	 margin: 0 0 0;
+	margin: 0 0 0;
 }
 select {
     padding:4px;
@@ -605,7 +588,6 @@ select {
     border-radius: 0px;
 }
 
-/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
 .select-text {
 	width: 30%;
 }

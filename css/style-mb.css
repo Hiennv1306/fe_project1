@@ -3,6 +3,9 @@
 	.contact {
 		padding-left: 0;
 	}
+	.btn-hien button {
+		display: none;
+	}
 	.new {
 		right: 75%;
 		top: 21%;
@@ -54,10 +57,9 @@
 	.contact {
 		padding-left: 0;
 	}
-	/* .images img {
-	
-		height: 150px;
-	} */
+	.btn-hien button {
+		display: none;
+	}
 	.sale {
 		right: 49%;
 	}
@@ -128,9 +130,15 @@
 	.menu button {
 		padding: 10px 10px; 
 	}
-	/* .images img {
-		height: 135px;
-	} */
+	.menu {
+		margin-top: -45px;
+	}
+	.logo {
+		margin: 0 41px;
+	}
+	.btn-hien button {
+		margin-right: 9%;
+	}
 	.add-cart {
 		top: 52%;
 		right: 31%;
@@ -178,6 +186,9 @@
 		padding-right: 0 !important;
 		padding-left: 0 !important;
 	}
+	.menu nav button {
+		display: none;
+	}
 
 
 }
@@ -186,6 +197,9 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	.menu button {
 		padding: 18px 40px;
+	}
+	.btn-hien button {
+		display: none;
 	}
 	/* .images img {
 		height: 250px;
@@ -217,10 +231,21 @@
 	.menu button {
 		padding: 18px 15px;
 	}
+	.btn-hien button{
+		display: none;
+	}
 }
 @media (min-width: 1200px) {
 	.nav-link {
 		padding-right: 0 !important;
 		padding-left: 0 !important;
+	}
+	.btn-hien button {
+		display: none;
+	}
+	.menu {
+		
+		margin-left: 10.666667%;
+	
 	}
 }
